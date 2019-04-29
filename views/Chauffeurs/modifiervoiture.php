@@ -338,6 +338,7 @@ include "../../core/voitureC.php";
                   <h4 class="card-title">voiture</h4>
 <?PHP
                   if (isset($_GET['matricules'])){
+
   $voitureC=new voitureC();
     $result=$voitureC->recupererVoiture($_GET['matricules']);
   foreach($result as $row){
@@ -367,8 +368,9 @@ include "../../core/voitureC.php";
                           <label class="col-sm-3 col-form-label">type</label>
                           <div class="col-sm-9">
                             <select class="form-control" name="types" value="<?PHP echo $types ?>">
-                              <option>coupé</option>
-                              <option>cabriolet</option>
+                                <option value="<?PHP echo $types ?>"><?PHP echo $types ?></option>
+                              <option VALUE="coupé">coupé</option>
+                              <option value="cabriolet">cabriolet</option>
                             </select> 
                           </div>
                         </div>
@@ -380,8 +382,9 @@ include "../../core/voitureC.php";
                           <label class="col-sm-3 col-form-label" value="<?PHP echo $marque ?>">marque</label>
                           <div class="col-sm-9">
                             <select class="form-control" name="marque">
-                              <option>BMW</option>
-                              <option>RENAULT</option>
+                                <option  value="<?PHP echo $marque ?>"> <?PHP echo $marque ?></option>
+                              <option value="BMW">BMW</option>
+                              <option VALUE="RENAULT">RENAULT</option>
                             </select>
                           </div>
                         </div>
@@ -411,7 +414,7 @@ include "../../core/voitureC.php";
                         <div class="form-group row">
                           <label class="col-sm-3 col-form-label">matricule</label>
                           <div class="col-sm-9">
-                            <input type="text" class="form-control" pattern="[0-9]{7}" name="matricules"  value="<?PHP echo $matricules ?>" required>
+                            <input type="text" class="form-control" name="matricules"  value="<?PHP echo $matricules ?>" required>
                           </div>
                         </div>
                       </div>
@@ -424,13 +427,14 @@ include "../../core/voitureC.php";
                      
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Pays</label>
+                          <label class="col-sm-3 col-form-label">PRIX</label>
                           <div class="col-sm-9">
                             <select class="form-control" name="pays">
-                              <option>Tunisie</option>
-                              <option>Malie</option>
-                              <option>Suède</option>
-                              <option>Egypte</option>
+                                <option value="<?PHP echo $pays ?>"><?PHP echo $pays ?></option>
+                              <option value="20">20</option>
+                              <option value="30">30</option>
+                              <option value="50">50</option>
+                              <option value="100">100</option>
                             </select>
                           </div>
                         </div>
@@ -457,9 +461,10 @@ include "../../core/voitureC.php";
                   if (isset($_POST['modifier'])){
   $voiture=new voiture($_POST['matricules'],$_POST['marque'],$_POST['couleurs'],$_POST['types'],$_POST['dates'] ,$_POST['nb_places'],$_POST['pays']);
   $voitureC->modifiervoiture($voiture,$_POST['matricules_ini']);
-  echo $_POST['matricules_ini'];
-  
-}
+
+
+
+                  }
 ?>
                 </div>
               </div>

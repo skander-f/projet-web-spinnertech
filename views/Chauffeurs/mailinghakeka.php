@@ -7,10 +7,10 @@
 
 		<?php
 											if(isset($_POST['submit'])){
-											$to='skander.frini@esprit.tn';
-											$sujet='test mail en local';
+											$to='friniskander1970@gmail.com';
+											$sujet='reservation';
 											$texte=$_POST['texte'];
-											$header='From :  test@gmail.com';
+											$header='From :  syfax@gmail.com';
 											mail($to,$sujet,$texte,$header);
 									     	}
 

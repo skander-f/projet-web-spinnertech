@@ -107,7 +107,7 @@ try{
 		
 	}
 	function recupererVoiture($matricules){
-		$sql="SELECT * from voiture where matricules=$matricules";
+		$sql="SELECT * from voiture where matricules='$matricules'";
 		$db = config::getConnexion();
 		try{
 		$liste=$db->query($sql);

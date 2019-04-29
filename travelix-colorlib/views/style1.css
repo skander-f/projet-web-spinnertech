@@ -1,0 +1,63 @@
+fieldset
+       {
+        background: #ffffff;
+        width:40%;
+        margin: 50px 450px;
+       }
+.imglabel
+        {
+        margin-left: 90%;
+        color: white;
+        font-weight: bold;
+        }
+    .A
+        {
+            text-align: center;
+        }
+    .mail
+        {
+            padding: 10px 140px;
+        }
+    
+        .date
+        {
+            padding: 10px 155px;
+
+        }
+        .nom
+        {
+            padding: 10px 25px;
+        }
+    .prenom
+        {
+            padding: 10px 25px;
+        }
+        .P
+        {
+            padding: 10px 195px;
+        }
+        .I
+        {
+            padding: 12.5px 30px;
+        }
+        .numero
+        {
+            padding: 10px 55px;
+        }
+        .pwd
+        {
+            padding: 10px 135px;
+        }
+        .B
+        {
+            margin-left: 50%;
+            padding: 10px 55px;
+        }
+        .Q
+        {
+          margin-left: 25%;
+        }
+        .civilite
+        {
+            margin-left: 15%;
+        }

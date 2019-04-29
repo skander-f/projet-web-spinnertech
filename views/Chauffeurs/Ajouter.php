@@ -294,9 +294,9 @@ $listeVoitures=$voiture1C->afficherVoitures();
                 <li class="nav-item">
                   <a class="nav-link" href="../Chauffeurs/Ajouter.php">Ajouter</a>
                 </li>
-				<li class="nav-item">
-                  <a class="nav-link" href="../Chauffeurs/modifiervoiture.php">Modifier</a>
-                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../Chauffeurs/mailing.php">send mail</a>
+                  </li>
 				<li class="nav-item">
                   <a class="nav-link" href="../Chauffeurs/Supprimer.html">Supprimer</a>
                 </li>
@@ -370,7 +370,7 @@ $listeVoitures=$voiture1C->afficherVoitures();
                             <select class="form-control" name="marque">
                               <option>BMW</option>
                               <option>RENAULT</option>
-                              <option>Ford</option>
+                              <option>FORD</option>
 
                             </select>
                           </div>
@@ -414,13 +414,13 @@ $listeVoitures=$voiture1C->afficherVoitures();
                      
                       <div class="col-md-6">
                         <div class="form-group row">
-                          <label class="col-sm-3 col-form-label">Pays</label>
+                          <label class="col-sm-3 col-form-label">Prix</label>
                           <div class="col-sm-9">
                             <select class="form-control" name="pays">
-                              <option>Tunisie</option>
-                              <option>Malie</option>
-                              <option>Suède</option>
-                              <option>Egypte</option>
+                              <option>20</option>
+                              <option>30</option>
+                              <option>50</option>
+                              <option>100</option>
                             </select>
                           </div>
                         </div>
@@ -479,7 +479,7 @@ $listeVoitures=$voiture1C->afficherVoitures();
                             nb_places
                           </th>
                           <th>
-                            pays
+                            prix
                           </th>
                         </tr>
                       </thead>
